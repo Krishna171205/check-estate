@@ -868,25 +868,13 @@ const AdminDashboard = () => {
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Area/District</label>
-                <select 
+                <input 
+                  type="text"
                   value={newProperty.area}
                   onChange={(e) => setNewProperty({...newProperty, area: e.target.value})}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-sm pr-8"
-                >
-                  <option value="">Select Area</option>
-                  <option value="Downtown">Downtown</option>
-                  <option value="Beverly Hills">Beverly Hills</option>
-                  <option value="Hollywood">Hollywood</option>
-                  <option value="Santa Monica">Santa Monica</option>
-                  <option value="Venice">Venice</option>
-                  <option value="Malibu">Malibu</option>
-                  <option value="Pasadena">Pasadena</option>
-                  <option value="West Hollywood">West Hollywood</option>
-                  <option value="Manhattan Beach">Manhattan Beach</option>
-                  <option value="Hermosa Beach">Hermosa Beach</option>
-                  <option value="Culver City">Culver City</option>
-                  <option value="Brentwood">Brentwood</option>
-                </select>
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-sm" 
+                  placeholder="Enter area (e.g., Downtown, Beverly Hills, etc.)"
+                />
               </div>
             </div>
             
@@ -899,9 +887,7 @@ const AdminDashboard = () => {
               </button>
               <button 
                 onClick={handleAddProperty}
-                className="px-4 py-2 bg-blue-600 hover:bg-blue-7
-
-                00 text-white rounded-lg cursor-pointer whitespace-nowrap"
+                className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg cursor-pointer whitespace-nowrap"
               >
                 Add Property
               </button>
@@ -1051,25 +1037,13 @@ const AdminDashboard = () => {
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Area/District</label>
-                <select 
+                <input 
+                  type="text"
                   value={selectedProperty.area || ''}
                   onChange={(e) => setSelectedProperty({...selectedProperty, area: e.target.value})}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-sm pr-8"
-                >
-                  <option value="">Select Area</option>
-                  <option value="Downtown">Downtown</option>
-                  <option value="Beverly Hills">Beverly Hills</option>
-                  <option value="Hollywood">Hollywood</option>
-                  <option value="Santa Monica">Santa Monica</option>
-                  <option value="Venice">Venice</option>
-                  <option value="Malibu">Malibu</option>
-                  <option value="Pasadena">Pasadena</option>
-                  <option value="West Hollywood">West Hollywood</option>
-                  <option value="Manhattan Beach">Manhattan Beach</option>
-                  <option value="Hermosa Beach">Hermosa Beach</option>
-                  <option value="Culver City">Culver City</option>
-                  <option value="Brentwood">Brentwood</option>
-                </select>
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 text-sm" 
+                  placeholder="Enter area (e.g., Downtown, Beverly Hills, etc.)"
+                />
               </div>
             </div>
             
